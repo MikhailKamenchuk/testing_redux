@@ -5,7 +5,7 @@ import ThemedButton from './ThemedButton';
 
 class App extends React.Component {
   state = {
-    theme: themes.light
+    theme: themes.dark
   }
   toggleTheme = () => {
     const newTheme = this.state.theme === themes.dark
