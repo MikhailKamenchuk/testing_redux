@@ -1,0 +1,3 @@
+[0820/134152.592:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[0907/144206.147:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[0907/144206.166:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
