@@ -1,21 +1,18 @@
 import { createStore } from "redux";
 
-export const INCREMENT = 'COUNTER/INCREMENT';
-export const DECREMENT = 'COUNTER/DECREMENT';
-
 export const increment = () => {
   return {
-    type: INCREMENT
+    type: 'COUNTER/INCREMENT'
   }
 }
 
 export const decrement = () => {
   return {
-    type: DECREMENT
+    type: 'COUNTER/DECREMENT'
   }
 }
 
-export const counterReducer = (state = 0, action) => {
+export const reducer = (state = 0, action) => {
   switch (action.type) {
     case INCREMENT:
       return state + 1
@@ -27,6 +24,6 @@ export const counterReducer = (state = 0, action) => {
 }
 
 const store = createStore(
-  counterReducer,
+  reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
