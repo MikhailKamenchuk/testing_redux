@@ -22,12 +22,10 @@ const counterReducer = (state = 0, action) => {
     case DECREMENT:
       return state - 1;
     default:
-      return store;
+      return state;
   }
 }
 
 export const store = createStore(counterReducer);
-
-
 
 
