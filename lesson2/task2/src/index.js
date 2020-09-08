@@ -26,5 +26,5 @@ store.subscribe(() => {
   const sum = history.reduce((acc, next) => acc + +next, 0);
   counterResultEl.textContent = history.length === 0 
   ? ''
-  : `${expression}=${sum}`
+  : `${expression} = ${sum}`
 }) 
