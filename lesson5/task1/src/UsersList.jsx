@@ -3,8 +3,6 @@ import Pagination from './Pagination';
 import User from './User'
 import { connect } from "react-redux";
 import {setCurrentPage} from './currentPage.actions';
-import { usersSelector } from "./users.selectors";
-import { currentPageSelector } from "./currentPage.selectors";
 
 class UsersList extends React.Component {
   constructor(props) {
@@ -52,8 +50,8 @@ class UsersList extends React.Component {
 
 const mapState = state => {
   return {
-    users: usersSelector(state),
-    currentPage: currentPageSelector(state)
+    users: state.users.usersList,
+    currentPage: state.currentPage
   }
 }
 
